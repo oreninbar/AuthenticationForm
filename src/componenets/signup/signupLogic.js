@@ -12,8 +12,9 @@ const FormLogic = (formSubmitted, validationForm) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    let tempErrors = validationForm(inputValues);
+    let tempErrors = await validationForm(inputValues);
     setErrors(tempErrors);
+    console.log(tempErrors);
     setIsSubmitted(true);
   };
 

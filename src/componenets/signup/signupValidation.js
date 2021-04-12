@@ -29,10 +29,3 @@ export default async function validation(values) {
   return errors;
 }
 
-// else {
-//   let tempUser = await getUser(values.useremail);
-//   if (tempUser && tempUser.useremail === values.useremail) {
-//     errors.useremail =
-//       "Email address already exist, login with the exists email or change email";
-//   }
-// }
